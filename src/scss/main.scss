@@ -6,11 +6,12 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/index';*/
-* {
-    box-sizing:border-box;
-    margin:0 ;
-    padding: 0;
-}
+
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/reset';
+@import 'layout/body';
+
 .cabecera {
     background-color: black;
     width: 100vw;
@@ -27,86 +28,11 @@
 .nav .menu {
     width: 25px; 
 }
-.parte1 {
-    background-color: rgb(82, 156, 241);
-    /* height: auto; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: -2;
-    
-}
-.parrafo1 {
-    color: white;
-    font-size: 50px;
-    z-index: 1;
-}
-.parrafo2 {
-    color: white;
-    font-size: 25px;
-    z-index: 1;
-}
-.parte1 .boton {
-    background-color: rgb(38, 183, 88);
-    color: white;
-    padding: 5px 25px;
-    border-radius: 10px;
-    border: none;
-    z-index: 1;
-    /* width: 100%; */
-}
 
-.parte1 .picture {
-    position: absolute;
-    z-index: -1;
-    /* top:-100px; */
-}
-
-.parte1 .premium_dancer {
-    display: none;
-}
-
-.parrafo3 {
-    color: white;
-    font-size: 10px;
-    padding: 10px;
-    z-index: 1;
-}
-
-.parte2 {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-
-.parte2 .titulo {
-    margin-top: 10px;
-}
-
-.parte2 .container {
-    display: flex;   
-    margin: 10px;
-}
-
-.container .imagen {
-    width: 100px;
-}
-
-.container .uno {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: left;
-line-height: 30px;
-margin-left: 20px;
-}
 
 .footer {
     background-color: black;
-    color: white;
+    color: $colorText;
     
     
 }
