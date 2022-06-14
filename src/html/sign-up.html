@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <form
+          method="post"
+          action="https://adalab-server-form.herokuapp.com/
+        "
+        >
+          <label for="email-1">¿Cuál es tu correo electrónico?</label>
+          <input
+            type="email"
+            value="email"
+            id="email-1"
+            name="email"
+            placeholder="Pon tu correo electrónico"
+          />
+
+          <label for="email-2">Confirma el correo electrónico</label>
+          <input
+            type="email"
+            value="email"
+            id="email-2"
+            name="email"
+            placeholder="Vuelve a poner tu correo electrónico"
+          />
+
+          <label for="password">Crea una contraseña</label>
+          <input
+            type="password"
+            value="password"
+            id="password"
+            name="password"
+            placeholder="Crea una contraseña"
+          />
+
+          <label for="name">¿Como quieres que te llamemos?</label>
+          <input
+            type="text"
+            value="name"
+            id="name"
+            name="name"
+            placeholder="Un nombre de perfil"
+          />
+          <label for="number">Día</label>
+          <input
+            type="number"
+            value="number"
+            id="number"
+            name="number"
+            placeholder="DD"
+            min="01"
+            max="31"
+          />
+          <label for="mes">Mes</label>
+          <select name="mes" id="mes">
+            <option value="Mes" selected disabled>Mes</option>
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+
+          <label for="year">Año</label>
+          <input
+            type="number"
+            value="year"
+            id="year"
+            name="year"
+            placeholder="AAAA"
+            min="1900"
+            max="2022"
+          />
+
+          <label for="woman">
+            <input type="radio" name="genero" id="woman" value="genero" />
+            Mujer
+          </label>
+
+          <label for="man">
+            <input type="radio" name="genero" id="man" value="genero" />
+            Hombre
+          </label>
+
+          <label for="no-binario">
+            <input type="radio" name="genero" id="no-binario" value="genero" />
+            No binario
+          </label>
+
+          <div>
+            <label for="ofertas">
+              <input
+                type="checkbox"
+                name="ofertas"
+                id="ofertas"
+                value="ofertas"
+              />
+              Quiero que me envieís novedades y ofertas de Spotify
+            </label>
+          </div>
+
+          <div>
+            <label for="compartir">
+              <input
+                type="checkbox"
+                name="ofertas"
+                id="compartir"
+                value="ofertas"
+              />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              aut eligendi sint, ad fugit quasi excepturi perferendis aliquid
+              consectetur, molestiae quibusdam nisi! Suscipit porro reiciendis
+              minus temporibus, veritatis assumenda doloremque!
+            </label>
+          </div>
+
+          <input type="submit" value="Registrarte" name="submit" id="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
